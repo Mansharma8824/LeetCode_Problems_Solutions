@@ -1,2 +1,2 @@
 # LeetCode_Problems_Solutions
-This Repository will Contain Some problems and Solutions of That Problems.
+This Repository will Contain Coding problems and Solutions of That Problems.
