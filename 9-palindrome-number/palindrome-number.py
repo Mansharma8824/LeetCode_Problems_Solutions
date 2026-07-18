@@ -1,5 +1,14 @@
 class Solution(object):
     def isPalindrome(self, x):
-        Str = str(x)
-        return Str == Str[::-1]
+        pal = 0
+        original = x
+        while x > 0:
+            rem = x%10
+            pal = pal*10 + rem
+            x= x//10
+        if pal == original:
+            return True
+        else:
+            return False
+
         
