@@ -1,8 +1,15 @@
 class Solution(object):
     def twoSum(self, nums, target):
-        length = len(nums)
-        for i in range(0,length):
-            for j in range(i+1, length):
-                if nums[i]+ nums[j] == target:
-                    return [i,j]
+        hash_map = {}
+        for i,num in enumerate(nums):
+            needed = target - num
+            
+            if needed in hash_map:
+                return [hash_map[needed],i]
+            
+            hash_map[num] = i
+            
+        return []
+
+        
 
